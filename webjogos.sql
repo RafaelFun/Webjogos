@@ -4,11 +4,11 @@ use webjogos;
 create table if not exists usuario (
   id int(6) auto_increment not null primary key,
   email varchar(140) not null,
-  senha  varchar(255) not null,
+  senha  varchar(255) not null
 );
 
 
-INSERT INTO usuario (nome, email, senha)
+INSERT INTO usuario (email, senha)
 VALUES ('teste@teste.com', 'teste');
 
 create table if not exists jogos (
@@ -22,12 +22,12 @@ create table if not exists jogos (
 );
 
 INSERT INTO jogos (preco, nome, genero, empresa, data_de_lancamento, multijogador) 
-values ('154,9', 'Dark Souls Remastered', 'RPG', 'EA SPORTS', '2018-05-28', 'Sim');
+values ('154.9', 'Dark Souls Remastered', 'RPG', 'EA SPORTS', '2018-05-28', 'Sim');
 INSERT INTO jogos (preco, nome, genero, empresa, data_de_lancamento, multijogador)
 values ('0', 'Counter-Strike 2', 'FPS', 'Valve', '2012-08-21', 'Sim');
 INSERT INTO jogos (preco, nome, genero, empresa, data_de_lancamento, multijogador)
-values ('249,9', 'The Last of Us™ Part I', 'Terror','Naughty Dog', '2022-09-02', 'Não');
+values ('249.9', 'The Last of Us™ Part I', 'Terror','Naughty Dog', '2022-09-02', 'Não');
 INSERT INTO jogos (preco, nome, genero, empresa, data_de_lancamento, multijogador)
-values ('93,99', 'Sniper Elite 5', 'Ação', 'Rebellion', '2022-05-25', 'Sim');
+values ('93.99', 'Sniper Elite 5', 'Ação', 'Rebellion', '2022-05-25', 'Sim');
 INSERT INTO jogos (preco, nome, genero, empresa, data_de_lancamento, multijogador)
-values ('27,99', 'The Binding of Isaac: Rebirth', 'Ação', 'Nicalis, Inc.', '2014-11-04', 'Não');
+values ('27.99', 'The Binding of Isaac: Rebirth', 'Ação', 'Nicalis, Inc.', '2014-11-04', 'Não');
